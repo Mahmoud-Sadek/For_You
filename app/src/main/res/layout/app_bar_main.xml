@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d01d2c"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingRight="@dimen/pad_20dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:scaleType="center"
+                        android:src="@drawable/ashank_word" />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilrImg"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/profile" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/pad_5dp"
+            android:layout_marginRight="@dimen/pad_5dp"
+            android:layout_marginBottom="@dimen/pad_5dp"
+            android:background="@drawable/button_search_style"
+            android:drawableLeft="@drawable/places_ic_search"
+            android:paddingLeft="@dimen/pad_5dp"
+            android:text="@string/search_hint"
+            android:textColor="@color/about_item_text_color" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_out_free_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="gone"
+        app:srcCompat="@drawable/logout" />
+</android.support.design.widget.CoordinatorLayout>

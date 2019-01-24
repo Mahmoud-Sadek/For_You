@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradiant_color"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/pad_20dp">
+
+    <ImageView
+        android:id="@+id/codeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/card"
+        android:visibility="gone"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/buytxt_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sure you will Go."
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
+
+        <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Press Ok To Get Free Code, and active it when you go"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:id="@+id/myTextView" />
+    </LinearLayout>
+</LinearLayout>

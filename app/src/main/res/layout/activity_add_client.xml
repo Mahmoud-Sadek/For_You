@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_client"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a3shank.apps.ashank.admin.AddClientActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="20dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/user"
+                android:hint="First Name"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/user"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/user"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:hint="Mobile Num"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <!--<com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/catagorie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:hint="Catagorie"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />-->
+            <Spinner
+                android:id="@+id/spinner_categ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:entries="@array/sub_categoryy_array"
+                android:prompt="@string/category_spiner"
+                android:padding="10dp"
+                android:background="@color/colorAccent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+            <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/resume"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:hint="Resume .."
+                android:imeOptions="actionUnspecified"
+                android:inputType="textMultiLine"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+            <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                android:id="@+id/shortdesc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="35dp"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:hint="Short description .."
+                android:imeOptions="actionUnspecified"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:padding="16dp"
+                android:textColor="#ADCCE2"
+                android:textColorHint="#ADCCE2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/angle_sinup"
+                android:padding="10dp"
+                android:text="Location Map" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_profileCompany"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_camera"
+                android:scaleType="centerCrop"
+                app:civ_border_color="#2565cf"
+                app:civ_border_width="2dp" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_list"-->
+                    <!--android:layout_width="250dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:background="@drawable/ic_camera" />-->
+            <!--</LinearLayout>-->
+            <Button
+                android:id="@+id/btnAddClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/angle_sinup"
+                android:padding="10dp"
+                android:text="Add Client" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

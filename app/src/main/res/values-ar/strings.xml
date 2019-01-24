@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">عشانك</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="btn_back"><![CDATA[<< Skip]]></string>
+    <string name="country_prompt">الدولة</string>
+    <string name="home">الرئيسية</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="free_code"></string>
+    <string name="today_deal">عروض اليوم</string>
+    <string name="about">عن البرنامج</string>
+    <string name="language">اللغة</string>
+    <string name="language_setting">تغيير اللغة</string>
+    <string-array name="country_arrays">
+        <item>مصر</item>
+        <item>السعودية</item>
+        <item>المغرب</item>
+        <item>الامارات العربية</item>
+        <item>الكويت</item>
+        <item>البحرين</item>
+        <item>قطر</item>
+    </string-array>
+    <!-- Language select dialog -->
+    <string-array name="lang_select">
+        <item>English</item>
+        <item>عربي</item>
+    </string-array>
+    <string name="lang_dialog_title">تغيير اللغة</string>
+    <string name="lang_dialog_message">اللغة المفضلة ؟</string>
+    <string name="type_msg">اكتب رسالة</string>
+    <string name="description">After the formation of the Galactic Empire, the Rebel Alliance recruits Jyn Erso (Felicity Jones) to work with a team including Cassian Andor (Diego Luna) to steal the design schematics of the Empire\'s new superweapon, the Death Star.</string>
+    <string name="development">In February 2013, The Walt Disney Company CEO Bob Iger confirmed the development of two stand-alone films, each individually written by Lawrence Kasdan and Simon Kinberg. On February 6, Entertainment Weekly reported that Lucasfilm is working on two films featuring Han Solo and Boba Fett. Disney CFO Jay Rasulo has described the stand-alone films as origin stories. Kathleen Kennedy explained that the stand-alone films will not crossover with the films of the sequel trilogy…</string>
+    <string name="about_us">تطبيق فريد من نوعه محلياً وعالمياً أنشئ في جمهورية مصر العربية ويتميز بالشراكة المثمرة ما بين الجهات الخدمية بكافة أنواعها والمستخدم للتطبيق حيث إن هذه الشراكة قائمة على الأخذ والعطاء وروح التعاون والتكافل بين الأقطاب للهدف الأسمى وهو خدمة المجتمع، الطريقة سهلة جداً من خلال تكنولوجيا هذا التطبيق الذكي التي تسمح للجميع من جهات خدميه ومستخدمين مسجلين في التطبيق من الإستفادة بكل خدمة يقوم بطلبها المستخدم بقطاع ما، بالمقابل يحصل على خدمة مجانية مثيلة لها بقطاع آخر، تطبيق عشانك علشانك !</string>
+
+    <string name="logout">تسجيل خروج</string>
+    <string name="sihnup">Get Free Code</string>
+    <string name="resume">نبذة عن العميل</string>
+    <string name="comments">تعليقات</string>
+    <string name="map">خريطة</string>
+    <string name="call">اتصال</string>
+    <string name="share">مشاركة</string>
+    <string name="descriptions">تفاصيل</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="register">تسجيل جديد</string>
+    <string name="cancel">الغاء</string>
+
+    <string-array name="categorie_array">
+        <item>مطاعم</item>
+        <item>صحة</item>
+        <item>ملابس</item>
+        <item>إكسسوارات</item>
+        <item>مراكز تجميل</item>
+        <item>صيانة سيارات</item>
+        <item>سوبر ماركت</item>
+        <item>أحذية</item>
+        <item>أدوات منزلية</item>
+        <item>كاميرا و إستديو</item>
+        <item>جيم</item>
+        <item>أشياء اخرى</item>
+    </string-array>
+    <string name="resturant">مطعم</string>
+    <string name="cafe">كافية</string>
+    <string name="others">أشياء اخرى</string>
+    <string name="gym">حيم</string>
+    <string name="cam">كاميرا وإستوديو</string>
+    <string name="furniture">أثاث</string>
+    <string name="electronics">أدوات كهربائية</string>
+    <string name="men_shoes">أحذية رجالي</string>
+    <string name="women_shoes">أحذية حريمي</string>
+    <string name="supermarket">سوبر ماركت</string>
+    <string name="mechanical">ميكانيكي</string>
+    <string name="electrical">كهربائي سيارات</string>
+    <string name="garage">جراج</string>
+    <string name="car_washing">مغسلة سيارات</string>
+    <string name="srogy">سروجي سيارات</string>
+    <string name="accessories">إكسسوارات</string>
+    <string name="beauty_centers">مراكز تجميل</string>
+    <string name="baby">اطفالي</string>
+    <string name="men">رجالي</string>
+    <string name="women">حريمي</string>
+    <string name="hospital">مستشقى</string>
+    <string name="doctor">دكتور</string>
+    <string name="lab">معمل تحاليل</string>
+    <string name="scan">فحص</string>
+    <string name="your_location">مكانك</string>
+    <string name="open_net_map">افتح الانترنت لتري الاتجاهات!</string>
+</resources>

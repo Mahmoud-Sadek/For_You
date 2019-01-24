@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c51e2a</color>
+    <color name="colorPrimaryDark">#a91822</color>
+    <color name="colorAccent">#888888</color>
+    <color name="backColor">#941819</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="background_purple">#3F2466</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="text_color">#250054</color>
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="main_color_green">#00b863</color>
+    <color name="main_color_gray_dk">#3b3b3b</color>
+    <color name="main_color_gray_lt">#acacac</color>
+    <color name="main_color_gray">#7d7d7d</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="blue">#303F9F</color>
+    <color name="red">#9b151c</color>
+    <color name="accent_color">@color/colorAccent</color>
+    <color name="statusBarColor">@color/blue</color>
+    <color name="navigationBarColor">@android:color/black</color>
+    <color name="drawerArrowColor">@color/accent_color</color>
+    <color name="theme_primary">@color/colorPrimaryDark</color>
+    <color name="theme_primary_text_inverted">@color/text_color</color>
+    <color name="theme_secondary_text_inverted">#451213</color>
+
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="bgTitleLeft">#594691</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#594691</color>
+    <color name="bgContent">#ffffff</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#adafb1</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#ffbf12</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="album_title">#4c4c4c</color>
+
+</resources>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_profile_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/gradiant_color"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.a3shank.apps.ashank.Activites.ProfileUserActivity"
+    tools:showIn="@layout/activity_profile_user">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/daria" />-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/linear">-->
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scaleType="fitCenter"
+        android:src="@drawable/share"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="bottom"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="bottom"-->
+    <!--android:src="@drawable/fb" />-->
+
+    <!--<com.a3shank.apps.ashank.Design.customfonts.MyTextView-->
+    <!--android:id="@+id/sin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="456 Friends"-->
+    <!--android:textColor="#85ffffff"-->
+    <!--android:textSize="12dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ovalImageView"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:gravity="right"-->
+    <!--android:src="@drawable/daria" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="bottom"-->
+    <!--android:src="@drawable/twitter"-->
+
+    <!--/>-->
+
+    <!--<com.a3shank.apps.ashank.Design.customfonts.MyTextView-->
+    <!--android:id="@+id/sinn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="562 Followings"-->
+    <!--android:textColor="#85ffffff"-->
+    <!--android:textSize="12dp" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/userImg"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/usrusr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="left"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Name"
+                android:textColor="#a2a1b8"
+                android:textSize="16dp" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="right"
+                android:hint="Sam Enric"
+                android:padding="16dp"
+                android:textColor="#181737"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="left"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Email"
+                android:textColor="#a2a1b8"
+                android:textSize="16dp" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/user_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#181737"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="14dp" />
+        </LinearLayout>
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="left"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Gender"
+                android:textColor="#a2a1b8"
+                android:textSize="16dp" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/gender_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="right"
+                android:hint="Enabled"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="left"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Birthday"
+                android:textColor="#a2a1b8"
+                android:textSize="16dp" />
+
+            <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                android:id="@+id/birthdate_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="right"
+                android:hint="Enabled"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

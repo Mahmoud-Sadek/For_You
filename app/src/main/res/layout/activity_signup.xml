@@ -1,0 +1,287 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+
+        <!--<VideoView-->
+            <!--android:id="@+id/videoview"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"></VideoView>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:drawableRight="@drawable/user"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red" />
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:drawableRight="@drawable/user"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red" />
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:drawableRight="@android:drawable/sym_action_email"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red" />
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                    android:id="@+id/pswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:drawableRight="@drawable/pasword"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red" />
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyEditText
+                    android:id="@+id/cnpswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:drawableRight="@drawable/pasword"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red" />
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                    android:id="@+id/birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Birthday"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:background="@drawable/button_style"/>
+
+                <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:text="Gender"
+                    android:textColor="@color/red"
+                    android:textSize="16dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:textColor="@color/red" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:textColor="@color/red" />
+                </RadioGroup>
+
+                <!--<Spinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:entries="@array/country_arrays"-->
+                <!--android:background="@drawable/angle_sinup"-->
+                <!--android:padding="10dp"-->
+                <!--android:prompt="@string/country_prompt"-->
+                <!--&gt;</Spinner>-->
+
+                <!--<Button-->
+                <!--android:id="@+id/btnMap"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:background="@drawable/angle_sinup"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="Location Map" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/red" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView_profileCompany"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/person_icon"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="#2565cf"
+                    app:civ_border_width="2dp" />
+                <!--<CheckBox-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="28dp"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:text="Accept Terms and Conditions"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="16dp" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                        android:id="@+id/register_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/angle_sinup"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/cancel"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <com.a3shank.apps.ashank.Design.customfonts.MyTextView
+                        android:id="@+id/sign_up_button"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/angle"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/register"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

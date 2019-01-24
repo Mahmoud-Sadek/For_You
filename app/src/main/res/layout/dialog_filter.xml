@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradiant_color"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Select"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="bottom"
+        android:background="#010710" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/filter_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:gravity="right|center"
+            android:padding="15dp"
+            android:text="Show All"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <!--<RadioButton-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="right|center"-->
+        <!--android:padding="15dp"-->
+        <!--android:text="Best Offer"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textSize="20sp"-->
+        <!--android:buttonTint="@color/colorAccent"/>-->
+
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/filter_near"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:buttonTint="@color/colorAccent"-->
+            <!--android:gravity="right|center"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="Near by"-->
+            <!--android:textColor="#FFF"-->
+            <!--android:textSize="20sp" />-->
+
+
+        <RadioButton
+            android:id="@+id/filter_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:gravity="right|center"
+            android:padding="15dp"
+            android:text="New"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

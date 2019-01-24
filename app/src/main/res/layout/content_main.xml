@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--<com.daimajia.slider.library.SliderLayout-->
+    <!--android:id="@+id/slider"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_weight="2"-->
+    <!--app:paddingEnd="120dp"-->
+    <!--app:pager_animation="ZoomIn" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/lin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/pad_30dp"-->
+    <!--android:layout_below="@id/slider"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/line" />-->
+    <ss.com.bannerslider.views.BannerSlider
+        android:id="@+id/banner_slider1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:animateIndicators="true"
+        app:defaultBanner="1"
+        app:defaultIndicators="dash"
+        app:interval="3000"
+        app:loopSlides="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/banner_slider1"
+        android:scrollbars="none" />
+</RelativeLayout>

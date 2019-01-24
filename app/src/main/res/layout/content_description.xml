@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.a3shank.apps.ashank.Activites.DecriptionsActivity"
+    tools:showIn="@layout/activity_decriptions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#091a32"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradiant_color"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/colorPrimary" />
+
+                        <ss.com.bannerslider.views.BannerSlider
+                            android:id="@+id/banner_slider1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:animateIndicators="true"
+                            app:defaultBanner="1"
+                            app:defaultIndicators="dash"
+                            app:interval="3000"
+                            app:loopSlides="true" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@id/banner_slider1"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="48dp"
+                            android:background="@color/colorAccent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profilrImg"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="3dp" />
+
+                        <TextView
+                            android:id="@+id/date_txtView"
+                            android:layout_width="130dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginLeft="115dp"
+                            android:background="@drawable/back_tim_txt"
+                            android:gravity="center"
+                            android:text="05:15 Local Time"
+                            android:textColor="#FFF" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="#e4e0e0"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/chat_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/comment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/comments"
+                        android:textColor="@color/main_color_green"
+                        android:textSize="12dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:id="@+id/buy_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ring" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Buy"
+                        android:textColor="#c5c5c5"
+                        android:textSize="12dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+-->
+                <LinearLayout
+                    android:id="@+id/map_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/mappp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/map"
+                        android:textColor="@color/main_color_green"
+                        android:textSize="12dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/call_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/call" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/call"
+                        android:textColor="@color/main_color_green"
+                        android:textSize="12dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/share"
+                        android:textColor="@color/main_color_green"
+                        android:textSize="12dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/descriptions"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad8d8" />
+
+            <com.zzt.library.BooheeScrollView
+                android:id="@+id/horizon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:overScrollMode="never">
+
+                <com.zzt.library.BuildLayerLinearLayout
+                    android:id="@+id/buildLayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></com.zzt.library.BuildLayerLinearLayout>
+            </com.zzt.library.BooheeScrollView>
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recycler_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scrollbars="none" />
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/freeCode_btn"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:background="@color/transparent"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/free"-->
+                <!--android:visibility="gone" />-->
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/freeCode_btn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:background="@drawable/button2_style"
+                android:padding="@dimen/padding_14"
+                android:text="@string/sihnup"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
