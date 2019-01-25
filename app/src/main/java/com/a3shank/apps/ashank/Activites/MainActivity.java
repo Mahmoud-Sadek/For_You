@@ -196,12 +196,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void checkScreeen() {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//        Display display = getWindowManager().getDefaultDisplay();
-//        Point size = new Point();
-//        display.getSize(size);
         int screenSize = getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK;
-//        size.x > size.y ||
         if (screenSize == Configuration.SCREENLAYOUT_SIZE_LARGE || screenSize == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
             largeScreen = true;
         } else {
@@ -215,7 +211,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static void outFreeCode() {
         ConstantsAshank.FREECODE = false;
         content.setBackgroundResource(android.R.color.transparent);
-//        mDemoSlider.setVisibility(View.VISIBLE);
         fabOutFreeCode.setVisibility(View.GONE);
     }
 
